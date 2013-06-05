@@ -9,7 +9,7 @@ import java.io.File;
 
 public class Home2WakeSwitch implements OnPreferenceChangeListener {
 
-    private static final String FILE = "/sys/android_touch/doubletap2wake";
+    private static final String FILE = "/sys/android_touch/home2wake";
 
     public static boolean isSupported() {
         return Utils.fileWritable(FILE);
