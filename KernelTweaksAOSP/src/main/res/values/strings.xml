@@ -10,4 +10,7 @@
     <string name="doubletap2wake_switch_title_head">DoubleTap2Wake</string>
     <string name="doubletap2wake_switch_summary_head">Power ON your screen by double tapping HW buttons</string>
 
+    <string name="home2wake_switch_title_head">Home2Wake</string>
+    <string name="home2wake_switch_summary_head">Power ON your screen by tapping on Home HW button</string>
+
 </resources>
