@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<!-- defaultValues need to be in sync with the default kernel values! -->
+
+        <PreferenceCategory
+	android:title="@string/kernel_button_settings_title">
+
+	    <!-- Swipe2Wake Switch Options -->
+	    <CheckBoxPreference
+	        android:key="sweep2wake_switch"
+	        android:title="@string/sweep2wake_switch_title_head"
+	        android:summary="@string/sweep2wake_switch_summary_head" />
+
+	    <!-- DoubleTap2Wake Switch Options -->
+	    <CheckBoxPreference
+	        android:key="doubletap2wake_switch"
+	        android:title="@string/doubletap2wake_switch_title_head"
+	        android:summary="@string/doubletap2wake_switch_summary_head" />
+	</PreferenceCategory>
+</PreferenceScreen>

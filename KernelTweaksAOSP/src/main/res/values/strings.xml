@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">n3o kernel features</string>
+    <string name="n3ocort3x_kernel">n3ocort3x kernel settings</string>
+    <string name="kernel_button_settings_title">Kernel Button Settings</string>
+
+    <string name="sweep2wake_switch_title_head">Sweep2Wake</string>
+    <string name="sweep2wake_switch_summary_head">Power ON your screen by swiping over HW buttons</string>
+
+    <string name="doubletap2wake_switch_title_head">DoubleTap2Wake</string>
+    <string name="doubletap2wake_switch_summary_head">Power ON your screen by double tapping HW buttons</string>
+
+</resources>
