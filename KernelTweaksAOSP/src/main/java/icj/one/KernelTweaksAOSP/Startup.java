@@ -12,5 +12,6 @@ public class Startup extends BroadcastReceiver {
         DoubleTap2WakeSwitch.restore(context);
         Home2WakeSwitch.restore(context);
         Home2MenuSwitch.restore(context);
+        BlinkButtonsSwitch.restore(context);
     }
 }
