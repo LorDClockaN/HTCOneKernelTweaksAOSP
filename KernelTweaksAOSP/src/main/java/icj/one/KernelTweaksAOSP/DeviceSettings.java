@@ -17,10 +17,12 @@ public class DeviceSettings extends PreferenceActivity  {
     public static final String KEY_SWEEP2WAKESWITCH = "sweep2wake_switch";
     public static final String KEY_DOUBLETAP2WAKESWITCH = "doubletap2wake_switch";
     public static final String KEY_HOME2WAKESWITCH = "home2wake_switch";
+    public static final String KEY_HOME2MENUSWITCH = "home2menu_switch";
 
     private TwoStatePreference mSweep2WakeSwitch;
     private TwoStatePreference mDoubleTap2WakeSwitch;
     private TwoStatePreference mHome2WakeSwitch;
+    private TwoStatePreference mHome2MenuSwitch;
     
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -41,6 +43,11 @@ public class DeviceSettings extends PreferenceActivity  {
         mHome2WakeSwitch.setEnabled(Home2WakeSwitch.isSupported());
         mHome2WakeSwitch.setChecked(Home2WakeSwitch.isEnabled(this));
         mHome2WakeSwitch.setOnPreferenceChangeListener(new Home2WakeSwitch());
+
+        mHome2MenuSwitch = (TwoStatePreference) findPreference(KEY_HOME2MENUSWITCH);
+        mHome2MenuSwitch.setEnabled(Home2MenuSwitch.isSupported());
+        mHome2MenuSwitch.setChecked(Home2MenuSwitch.isEnabled(this));
+        mHome2MenuSwitch.setOnPreferenceChangeListener(new Home2MenuSwitch());
 
     }
 

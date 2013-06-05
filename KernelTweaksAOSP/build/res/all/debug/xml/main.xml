@@ -22,5 +22,11 @@
 	        android:key="home2wake_switch"
 	        android:title="@string/home2wake_switch_title_head"
 	        android:summary="@string/home2wake_switch_summary_head" />
+
+	    <!-- Home2Menu Switch Options -->
+	    <CheckBoxPreference
+	        android:key="home2menu_switch"
+	        android:title="@string/home2menu_switch_title_head"
+	        android:summary="@string/home2menu_switch_summary_head" />
 	</PreferenceCategory>
 </PreferenceScreen>
