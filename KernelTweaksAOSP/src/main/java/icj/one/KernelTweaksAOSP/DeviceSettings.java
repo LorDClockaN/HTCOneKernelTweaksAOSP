@@ -11,7 +11,7 @@ public class DeviceSettings extends PreferenceActivity  {
     public static final String KEY_SWEEP2WAKESWITCH = "sweep2wake_switch";
     public static final String KEY_DOUBLETAP2WAKESWITCH = "doubletap2wake_switch";
     public static final String KEY_HOME2WAKESWITCH = "home2wake_switch";
-    public static final String KEY_LOGO2MENUSWITCH = "home2menu_switch";
+    public static final String KEY_LOGO2MENUSWITCH = "logo2menu_switch";
     public static final String KEY_BLINKBUTTONSSWITCH = "blinkbuttons_switch";
 
     private TwoStatePreference mSweep2WakeSwitch;
