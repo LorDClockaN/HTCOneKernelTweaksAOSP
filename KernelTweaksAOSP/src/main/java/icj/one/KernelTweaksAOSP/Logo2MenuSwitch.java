@@ -6,16 +6,16 @@ import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceManager;
 
-public class Home2WakeSwitch implements OnPreferenceChangeListener {
+public class Logo2MenuSwitch implements OnPreferenceChangeListener {
 
-    private static final String FILE = "/sys/android_touch/home2wake";
+    private static final String FILE = "/sys/android_touch/home2menu";
 
     public static boolean isSupported() {
         return Utils.fileExists(FILE);
     }
 
     /**
-     * Restore Home2Wake setting from SharedPreferences. (Write to kernel.)
+     * Restore Logo2Menu setting from SharedPreferences. (Write to kernel.)
      * @param context       The context to read the SharedPreferences from
      */
     public static void restore(Context context) {
@@ -24,7 +24,7 @@ public class Home2WakeSwitch implements OnPreferenceChangeListener {
         }
 
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
-        boolean enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_HOME2WAKESWITCH, false);
+        boolean enabled = sharedPrefs.getBoolean(DeviceSettings.KEY_LOGO2MENUSWITCH, false);
         if(enabled)
             Utils.writeValue(FILE, "1\n");
         else

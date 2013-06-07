@@ -1,11 +1,8 @@
 package icj.one.KernelTweaksAOSP.util;
 
-import android.os.Environment;
-import android.util.Log;
-
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.io.IOException;
 
 import static java.lang.System.nanoTime;
 
